@@ -1,0 +1,83 @@
+type: collection.insomnia.rest/5.0
+name: URL shorten go
+meta:
+  id: wrk_7b07d488ea3c452da27220aff159f786
+  created: 1762701417363
+  modified: 1762701417363
+  description: ""
+collection:
+  - url: http://localhost:3000/shorten
+    name: URL KISALTMA İSTEĞİ(POST)
+    meta:
+      id: req_59b5003a156f492fac2eecb89d76e413
+      created: 1762701424152
+      modified: 1762701607048
+      isPrivate: false
+      description: ""
+      sortKey: -1762701424152
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"url":"https://github.com/msinandemir"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.0.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/er2lMC
+    name: YÖNLENDİRME İSTEĞİ(GET)
+    meta:
+      id: req_19d912d5e21c44f5a1ab0c7989d7d707
+      created: 1762701490988
+      modified: 1762701585781
+      isPrivate: false
+      description: ""
+      sortKey: -1762701490988
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.0.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_d8bb52dd393f5e6fbaa2a85be35337d91284f14e
+    created: 1762701417367
+    modified: 1762701514172
+  cookies:
+    - key: _gh_sess
+      value: kGto9UZGVkmIVq%2F16AU9X3eln1atOtSKEZZXeAg89RWmq7nZT6XsdtvYZU2AdK382GtMvsU8bPYYthCyqSQPcfMdg3XoxGw%2BX8NEPRgSouyOgWEKTeQJuX%2F2USjGVxTHuUI6bG75qRz9iHR%2FLri9Tanq8dkFaWxFZNROGxju%2FsgTEHwWbmzNvEiq4pDuzHIdyUJxYVijwVaHFXlGZbFLype8o3qYHKhC8dYHJpqCLefY2tk20gYRg9yaCtf9zR%2FCYFZUJGB34GJ7hWnYayjOsw%3D%3D--iA07YzjK8w9sHbbQ--Mjt1Om8DN234dD5BZvnqnQ%3D%3D
+      domain: localhost
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: true
+      creation: 2025-11-09T15:18:34.170Z
+      lastAccessed: 2025-11-09T15:18:34.170Z
+      sameSite: lax
+      id: b4574083-2ed9-480f-ab0e-5fe12a722fd8
+environments:
+  name: Base Environment
+  meta:
+    id: env_d8bb52dd393f5e6fbaa2a85be35337d91284f14e
+    created: 1762701417365
+    modified: 1762701417365
+    isPrivate: false

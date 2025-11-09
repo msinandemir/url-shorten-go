@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "89b9e67f-4c1d-444a-9e1f-7b0f69d273c5",
+		"name": "URL shorten go",
+		"description": "Go ile yazılmış URL kısaltma servisi için Insomnia'dan çevrilmiş Postman koleksiyonu.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "URL KISALTMA İSTEĞİ (POST)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"url\":\"https://github.com/msinandemir\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/shorten",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"shorten"
+					]
+				}
+			}
+		},
+		{
+			"name": "YÖNLENDİRME İSTEĞİ (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/er2lMC",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"er2lMC"
+					]
+				}
+			}
+		}
+	]
+}
